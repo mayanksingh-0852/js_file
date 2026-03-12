@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>riya mayank singh</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let inter;
+   const syNa = function(){
+    if(!inter){
+        inter = setInterval(function (){
+            console.log("Mayank");
+            
+        },1000);
+    }
+}
+
+const sto = function(){
+    clearInterval(inter);
+    inter = null;
+}
+document.getElementById("start").addEventListener("click",syNa);
+document.getElementById("stop").addEventListener("click",sto);
+
+</script>
+</html>
